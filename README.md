@@ -3,6 +3,7 @@ dotfiles-sync
 
 Scripts to sync your dotfiles (or any other configurations) to Git, in order to keep them up to date between computers.
 Invoking these scripts will automatically pull down changes from your `origin` remote, commit all your changes, and push everything back up to `origin`.
+This is really useful to help sync your fork of [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles/) (or Paul Irish's [fork](https://github.com/paulirish/dotfiles/))
 
 Installation
 ------------
