@@ -8,6 +8,9 @@ Installation
 ------------
 Just drop these files somewhere into your path. I like to keep mine in `~/bin/` because then I can use these very scripts to keep it up-to-date in my dotfiles repo.
 
+It's also a good idea to set up aliases for any configuration repos you set up (see below). For example:
+`alias sync-sublime="sync-git \"~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User/\""`
+
 Usage
 -----
 ###Sync Aribtrary Config Files to a Git Repo using `sync-git`
