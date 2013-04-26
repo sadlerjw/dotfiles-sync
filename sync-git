@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ $# -eq 1 ]; then
+	eval cd "$1"
+fi
+
+git checkout master
+git pull
+git add --all
+git commit -m "sync-git -- $HOSTNAME -- $(date "+%Y.%m.%d %H:%M "|sed -e ' s/\"/\\\"/g' )"
+git push -u origin master
