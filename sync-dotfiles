@@ -1,0 +1,6 @@
+#!/bin/bash
+
+rsync -auvz --existing ~/ ~/dotfiles
+rsync -auvz ~/bin/ ~/dotfiles/bin
+sync-git ~/dotfiles
+rsync -auvz --exclude ".git/" --exclude ".DS_Store" --exclude "sync.sh" --exclude "readme.md" --exclude ".gitignore" --exclude ".gitattributes" ~/dotfiles/ ~/
